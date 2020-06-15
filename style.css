@@ -215,7 +215,7 @@ body{
 
 
 /* ------MAINPAGE-BUTTONS------ */
-.button{
+.button-download{
    
     margin-top: 5%;
 	margin-right: 5%;
@@ -223,11 +223,11 @@ body{
     color: orangered!important;
     border: orangered 1px solid!important;
 }
-.button:hover{
+.button-.button-download{
     background-color: orangered!important;
     color:white!important;
 }
-.button:hover .downloadbutton{
+.button-download:hover .downloadbutton{
 		transform: rotate(360deg);
 		transition-duration: 1s;
 }
@@ -646,7 +646,7 @@ body{
 		text-align: center;
 	}
 	.wordCarousel {
-		font-size: 25px;
+		font-size: 30px;
 		margin-left: 19%;
         text-align: initial;
    }
@@ -656,11 +656,12 @@ body{
    .lead{
 	font-size: 1.5rem;   
 }
-.button{
+.button-download{
 	margin-right: -8%;
+	margin-top: 9%;
 }
 .another{
-	margin-top: -12%;
+	margin-top: -14%;
     margin-left: 42%;
 }
 .tag-para{
