@@ -626,6 +626,13 @@ body{
 
 // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		width: 195vw;
+	}
 	#first-id{
 		order: 1;
 	}
@@ -633,13 +640,15 @@ body{
 		order: 2;
 	}
 	.image{
-		width: 80%;
+		width: 67%;
 	}
 	.first{
 		text-align: center;
 	}
 	.wordCarousel {
 		font-size: 25px;
+		margin-left: 19%;
+        text-align: initial;
    }
    .container-fluid .lead{
 	margin-left: 20%;	
@@ -648,7 +657,33 @@ body{
 	font-size: 1.5rem;   
 }
 .button{
-	margin-right: 0%;
+	margin-right: -8%;
+}
+.another{
+	margin-top: -12%;
+    margin-left: 42%;
+}
+.tag-para{
+	font-size: 10px;
+	margin-bottom: 0px;
+}
+.mycontent-heading{
+	font-size: 1.5rem;
+}
+.mycontent{
+	font-size: 15px;
+}
+#loader{
+	height: 35vh;
+}
+.hr-black-about {
+	margin-left: 60px;
+	margin-bottom: 5%;
+}
+.tags{
+	margin-left: -6%;
+}.tags1{
+	margin-left: -8%;
 }
  }
 
