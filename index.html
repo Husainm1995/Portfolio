@@ -43,8 +43,8 @@
     </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-8 col-sm-12 order-lg-1 order-sm-12">
-                    <div class="container-fluid">
+                <div class="col-lg-6 col-md-8 col-sm-12" id="container-fluid-id">
+                    <div class="container-fluid" >
                         <p class="lead">Hi, I Am.</p>
 
                         <h4 class="wordCarousel">
@@ -57,15 +57,17 @@
                                 </ul>
                             </div>
                         </h4>
-                        <a class="btn btn-lg button" href="#" role="button">Download CV <i
+                        <div id="button-holder">
+                            <a class="btn btn-lg button-download" href="#" role="button">Download CV <i
                                 class="fas fa-download downloadbutton"></i>
                         </a>
                         <a class="btn btn-lg another" href="#about" role="button">View my work <i
                                 class="fas fa-arrow-right arrow"></i>
                         </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-4 col-sm-12 image order-lg-12 order-sm-1">
+                <div class="col-lg-6 col-md-4 col-sm-12" id="first-id">
                     <div class="first">
                         <img class="image" src="test5.png" alt="web-img">
                     </div>
@@ -74,7 +76,7 @@
         </div>
     </div>
     <div class="whole">
-        <div class="aboutnav sticky-top">
+        <!-- <div class="aboutnav sticky-top">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link active" href="#home">Home</a>
@@ -86,21 +88,47 @@
                       <a class="nav-link" href="#project">My projects</a>
                   </li>
               </ul>
-          </div>
+          </div> -->
+          <!-- <div class="aboutnav sticky-top"> -->
+          <nav class="navbar navbar-expand-lg aboutnav sticky-top">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fa fa-github color" aria-hidden="true"></i></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#skills">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#project">My projects</a>
+                      </li>
+                  </ul>
+              <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+            </div>
+          </nav>
+        <!-- </div> -->
     
     <div class="container-about" id="about">
      
         <div class="row">
             <div class="col-6">
-                <p><span class="tags">&emsp;&lt;html&gt;</span></p>
-                <p><span class="tags">&emsp;&emsp;&lt;body&gt;</span></p>
+                <p class="tag-para"><span class="tags">&emsp;&lt;html&gt;</span></p>
+                <p class="tag-para"><span class="tags tags1">&emsp;&emsp;&lt;body&gt;</span></p>
 
                 <br>
-                <p><span class="tags">&emsp;&emsp;&emsp;&lt;h1&gt;</span></p>
+                <p class="tag-para"><span class="tags tags1">&emsp;&emsp;&emsp;&lt;h1&gt;</span></p>
                 <h1 class="mycontent-heading">ABOUT</h1>
                 <hr class="hr-black-about">
-                <p><span class="tags">&emsp;&emsp;&emsp;&lt;/h1&gt;</span></p>
-                <p><span class="tags">&emsp;&emsp;&emsp;&lt;p&gt;</span></p>
+                <p class="tag-para"><span class="tags tags1">&emsp;&emsp;&emsp;&lt;/h1&gt;</span></p>
+                <p class="tag-para"><span class="tags tags1">&emsp;&emsp;&emsp;&lt;p&gt;</span></p>
                 <p class="mycontent">I am a Full-Stack Developer/Designer based in New Delhi.I have a passion for web
                     design and love to
                     create for web and mobile devices.
@@ -108,11 +136,11 @@
                 <p class="mycontent">Interested in entire Web spectrum and working on ambitious projects with positive
                     people. </p>
 
-                <p><span class="tags">&emsp;&emsp;&emsp;&lt;/p&gt;</span></p>
+                <p class="tag-para"><span class="tags tags1">&emsp;&emsp;&emsp;&lt;/p&gt;</span></p>
                 <br>
 
-                <p><span class="tags">&emsp;&emsp;&lt;/body&gt;</span></p>
-                <p><span class="tags">&emsp;&lt;/html&gt;</span></p>
+                <p class="tag-para"><span class="tags tags1">&emsp;&emsp;&lt;/body&gt;</span></p>
+                <p class="tag-para"><span class="tags">&emsp;&lt;/html&gt;</span></p>
 
             </div>
             <div class="col-6 section-about">
@@ -132,7 +160,7 @@
                 <h1 class="heading-skills"> SKILLS </h1>
                 <hr class="hr-white-skills">
             <div class="row skills-row">
-                <div class="col-4">
+                <div class="col-4 img-carousel-1">
                     <div id="carouselExampleControls" class="carousel vert slide" data-ride="carousel" data-interval="1500">
                        
                         <div class="carousel-inner">
@@ -161,11 +189,11 @@
                 </div>
             </div>
             <div class="row skills-row2">
-                <div class="col-lg-9 description">
+                <div class="col-lg-9 col-8 description2">
                     <h1 class="description-heading2">Develop what you need.</h1>
                     <p class="description-paragraph2">I'm a developer, so I know how to add functionality to your website as a beautiful site with no functionality is of no use.</p>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-4 img-carousel-2">
                     <div id="carouselExampleControls" class="carousel vert slide" data-ride="carousel" data-interval="1500">
                        
                         <div class="carousel-inner">
@@ -188,8 +216,8 @@
             <hr class="hr-black">
         </div>
         
-        <div class="myproject">
-
+        <div class=" row myproject">
+            <div class="col-lg-3 col-sm-12">
             <div class="myproject-card">
                 <div class="card border-dark mb-3">
                              
@@ -197,13 +225,16 @@
                         <img class="project-image" src="project.jpeg">
 
                             <div class="middle">
-                                <div class="text"><h1>BasketOnline</h1>
-                                    <p>A food and vegetable selling website.</p>
+                                <div class="text"><h1 class="text-h1">BasketOnline</h1>
+                                    <p class="text-p">A food and vegetable selling website.</p>
                                 </div>
                             </div>
                     </div> 
                 </div>
             </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-12">
             <div class="myproject-card">
                 <div class="card border-dark mb-3">
                          
@@ -212,14 +243,15 @@
                         
                         <div class="middle">
                             <div class="text">
-                                <h1>BasketOnline</h1>
-                                <p>A food and vegetable selling website.</p>
+                                <h1 class="text-h1">BasketOnline</h1>
+                                <p class="text-p">A food and vegetable selling website.</p>
                             </div>
                         </div>
                     </div> 
                 </div>
             </div>
-                     
+           </div>
+           <div class="col-lg-3 col-sm-12">   
             <div class="myproject-card">
                 <div class="card border-dark mb-3">
                      
@@ -227,13 +259,15 @@
                         <img class="project-image" src="project.jpeg">
                     
                         <div class="middle">
-                            <div class="text"><h1>BasketOnline</h1>
-                                <p>A food and vegetable selling website.</p>
+                            <div class="text">
+                                <h1 class="text-h1">BasketOnline</h1>
+                                <p class="text-p">A food and vegetable selling website.</p>
                             </div>
                         </div>
                     </div>  
                 </div>
             </div>
+           </div>
         </div>
     </div> 
     <div class="main-background contact-background" id="contact">
@@ -262,13 +296,14 @@
             <div class="icon-effect">
                <a href="https://www.linkedin.com/in/akansha-jain-724395195"><i class="fa fa-linkedin color" aria-hidden="true"></i></a>
                <a href="https://github.com/a-k-a-n-s-h-a"><i class="fa fa-github color" aria-hidden="true"></i></a>
-                <!-- <a href="#"><i class="fa fa-instagram color" aria-hidden="true"></i></a> -->
+                <a href="#"><i class="fa fa-instagram color" aria-hidden="true"></i></a>
             </div>
             <div class="copy">
              <p class="copy-text">AKANSHA JAIN</p>  <i class="fa fa-copyright insta-color right" aria-hidden="true"></i>  <p class="copy-text">2020</p>
             </div>
         </div>
     </div> 
+     
    
 </div>
 
