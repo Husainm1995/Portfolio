@@ -118,7 +118,7 @@ body{
 	 overflow: hidden;
 	 position: relative;
 	 float: right;
-	/* height: 65px; */
+	 /* height: 65px; */
 	 height: 4rem;
 	 padding-top: 10px;
 	 margin-top: -10px;
@@ -631,10 +631,19 @@ body{
   #button-holder{
 	display: flex;
     justify-content: space-around;
-    
-	 margin-top: 4.5rem;
+    margin-top: 4.5rem;
   }
-
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	html {
+	  transform: rotate(-90deg);
+	  transform-origin: left top;
+	  width: 100vh;
+	  overflow-x: hidden;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	}
+  }
   /* // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -771,7 +780,7 @@ button:focus {
  }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 667px) { 
+@media (max-width: 667px) { 
 
 	*{
 		margin: 0px;
